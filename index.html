@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeTeach | Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow-sm">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeTeach | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-gray-800">
+
+    <header class="bg-white shadow-sm">
     <div class="container mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-2xl font-bold text-blue-600">CodeTeach</h1>
       <nav class="space-x-6 text-gray-700">
@@ -18,17 +18,15 @@
         <a href="contact.html" class="hover:underline">Contact</a>
       </nav>
     </div>
-  </header>
+    </header>
 
-  <!-- Hero -->
-  <section class="bg-blue-100 py-20 text-center">
+    <section class="bg-blue-100 py-20 text-center">
     <h2 class="text-4xl font-extrabold text-blue-800">Learn to Code, Build Your Future</h2>
     <p class="mt-3 text-gray-700">Join thousands of learners on their coding journey with CodeTeach</p>
     <a href="courses.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700">Explore Courses</a>
-  </section>
+    </section>
 
-  <!-- Features -->
-  <section class="py-16">
+    <section class="py-16">
     <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
       <div class="bg-gray-100 p-6 rounded-2xl shadow-sm">
         <h3 class="font-semibold text-blue-600 text-lg">Expert Instructors</h3>
@@ -43,11 +41,15 @@
         <p class="text-sm mt-2">Resume tips, interview prep, and job assistance included.</p>
       </div>
     </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-white text-center py-6 shadow-inner">
-    <p class="text-sm text-gray-500">© 2025 CodeTeach. All rights reserved.</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+      <p>&copy; <span id="year"></span> CodeTeach. All rights reserved.</p>
+      <p id="visitCount" class="text-sm text-gray-300"></p>
+    </footer>
+
+    <script src="js/footer.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
 </html>
